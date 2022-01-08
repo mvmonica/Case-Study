@@ -1,18 +1,3 @@
-/*function validate(){
-    var username = document.getElementById("username").value;
-    var password = document.getElementById("password").value;
-
-    if(username=="admin" && pasword=="user"){
-        alert("login successful");
-        return false;
-    }
-    else{
-        alert("login failed")
-    }
-
-}*/
-
-
 let slide_content = document.querySelector('#slide-content')
 
 let signin_form = document.querySelector('#signin-form')
@@ -20,8 +5,6 @@ let signin_form = document.querySelector('#signin-form')
 let signup_form = document.querySelector('#signup-form')
 
 let signin_btn = document.querySelector('#signin-btn')
-
-let darkmode_toggle = document.querySelector('#darkmode-toggle')
 
 let slide_index = 0
 
@@ -74,27 +57,23 @@ checkSigninInput = () => {
     })
 }
 
-function login(loginForm){
-    if(loginForm.username.value && loginForm.password.value){
-        var username=document.getElementById("username").value;
-        document.write('<html><body><h1><center>')
-        document.write("Welcome" + " ");
-        document,write(username);
-        document.write('</center></h1></body></html>');
-    }
-    else 
-    alert("Please Enter your username & password");
-}
+window.addEventListener('load', () => {
+    const params = (new URL(document.location)).searchParams;
+    const info = params.get('info');
+    const fullname = params.get('fullname');
+    const username = params.get('username');
+    const password = params.get('password');
 
-/*function onFormSubmit(){
-    var userData = readUserData();
-}
+    document.getElementById('result-email').innerHTML = info;
+    document.getElementById('result-fn').innerHTML = fullname;
+    document.getElementById('result-user').innerHTML = username;
+    document.getElementById('result-pw').innerHTML = password;
+    document.getElementById('result-fn').innerHTML = fullname;
 
-function readUserData(){
-    var userData = {};
-    userData['']
-}*/
 
+})
+
+/*
 var selectedRow = null;
 function onFormSubmit(e){
     event.preventDefault();
@@ -166,3 +145,4 @@ function resetForm(){
     document.getElementById('username').value = '';
     document.getElementById('password').value = '';
 }
+*/

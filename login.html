@@ -26,20 +26,19 @@
                         <img src="./img/slide (5).jpg" alt="slide image">
                     </div>
                 </div>                
-                <form name = "loginForm" method="post" action="index.html">
-                <form autocomplete="off" onsubmit="onFormSubmit()">
                 <div class="form-container">
                     <div class="form-content box">
                         <div class="logo">
                             <img src="./img/logo-light.png" alt="Instagram logo" class="logo-light">
                         </div>
                         <div class="signin-form" id="signin-form">
+                            <form action="index.html">
                             <div class="form-group">
                                 <div class="animate-input">
                                     <span>
                                         Phone number, username, or email
                                     </span>
-                                    <input type="text" id="info">
+                                    <input type="text" id="info" name="info">
                                 </div>
                             </div>
                             <div class="form-group">
@@ -47,12 +46,12 @@
                                     <span>
                                         Password
                                     </span>
-                                    <input type="password" id="password">
+                                    <input type="password" id="password" name="password">
                                     <button>Show</button>
                                 </div>
                             </div>
                             <div class="btn-group">
-                                <button class="btn-login" onclick="login(loginForm)" id="signin-btn" disabled>
+                                <button class="btn-login" onClick="login();" id="signin-btn" disabled>
                                     Log In
                                 </button>
                             </div>
@@ -63,11 +62,12 @@
                             </div>
                             <div class="btn-group">
                                 <button class="btn-fb">
-                                    <span class="fb-icon"></span>
-                                    Log in with Facebook
+                                    <img src="./img/facebook-icon.png" alt="">
+                                    <span>Log in with Facebook</span>
                                 </button>
                             </div>
                             <a href="#" class="forgot-pw">Forgot password?</a>
+                            </form>
                         </div>
                     </div>
                     <div class="box goto">
@@ -89,9 +89,6 @@
                         </div>
                     </div>
                 </div>
-                </form>
-            </form>
-
             </div>
         </div>
     <div class="footer">

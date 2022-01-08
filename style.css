@@ -182,7 +182,6 @@ body {
 
 .btn-group {
     padding: 8px 40px;
-    text-decoration: none;
 }
 
 .btn-login {
@@ -197,12 +196,8 @@ body {
     line-height: 18px;
     padding: 5px 9px;
     border-radius: 4px;
-    text-decoration: none;
 }
 
-.btn-login a{
-    text-decoration: none;
-}
 
 button:disabled {
     background-color: rgba(0, 149, 246, 0.3);
@@ -220,9 +215,8 @@ button:disabled {
     line-height: 18px;
     padding: 5px 9px;
     border-radius: 4px;
-    text-decoration: none;
 }
-.fb-icon{
+.su-fb-icon{
     display: inline-block;
     margin-right: 8px;
     position: relative;
